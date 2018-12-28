@@ -1,0 +1,14 @@
+{
+  "name": "env-tool",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "repository": "git@github.com:doniyor2109/env-tools.git",
+  "author": "doniyor2109 <doniyor2109@gmail.com>"
+}
