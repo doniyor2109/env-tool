@@ -24,41 +24,42 @@ yarn add env-tool
 
 ## Usages
 
-Run function in dev mode
+- Run function in dev mode
+    
+    ```js
+    const env = require("env-tool");
+    
+    env.dev(function () {
+      // runs in develpment
+    });
+    
+    ```
 
-```js
-const env = require("env-tool");
+- Checks weather environment is production
+    
+    ```js
+    const env = require("env-tool");
+    
+    if (env.is.prod) {
+      // true for production
+    }
+    ```
 
-env.dev(function () {
-  // runs in develpment
-});
+- Log in development
+    
+    ```js
+    const env = require("env-tool");
+    
+    env.dev.warn("WARNING for development");
+    ```
 
-```
+- Run in not production
 
-Checks weather environment is production
-
-```js
-const env = require("env-tool");
-
-if (env.is.prod) {
-  // true for production
-}
-```
-
-Log in development
-
-```js
-const env = require("env-tool");
-
-env.dev.warn("WARNING for development");
-```
-
-Run in not production
-```js
-env.not.prod(function () {
-  // run on environment that is not production
-});
-```
+    ```js
+    env.not.prod(function () {
+      // run on environment that is not production
+    });
+    ```
 
 
 ## Configure
