@@ -2,6 +2,7 @@
 
 Helps working with environments easily
 
+[![](https://img.shields.io/npm/v/env-tool.svg)](https://www.npmjs.com/package/env-tool)
 [![Build Status](https://travis-ci.com/doniyor2109/env-tools.svg?branch=master)](https://travis-ci.com/doniyor2109/env-tools)
 [![Greenkeeper badge](https://badges.greenkeeper.io/doniyor2109/env-tool.svg)](https://greenkeeper.io/)
 
