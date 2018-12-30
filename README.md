@@ -5,14 +5,14 @@ Helps working with environments easily
 [![Build Status](https://travis-ci.com/doniyor2109/env-tools.svg?branch=master)](https://travis-ci.com/doniyor2109/env-tools)
 [![Greenkeeper badge](https://badges.greenkeeper.io/doniyor2109/env-tools.svg)](https://greenkeeper.io/)
 
-# Table of contents
+## Table of contents
 
 - [Installation](#installation)
 - [Usages](#usages)
 - [Configure](#configure)
 - [License](#license)
 
-# Installation
+## Installation
 
 ```bash
 npm install env-tool
@@ -22,7 +22,7 @@ or
 yarn add env-tool
 ```
 
-# Usages
+## Usages
 
 Run function in dev mode
 
@@ -61,7 +61,7 @@ env.not.prod(function () {
 ```
 
 
-# Configure
+## Configure
 
 By default `env-tool` checks environment for node using `process.env.NODE_ENV`. However you can customize it yourself.
 
@@ -73,6 +73,6 @@ env.setChecker(function (env) {
 });
 ```
 
-# License
+## License
 
 MIT
