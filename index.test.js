@@ -1,8 +1,8 @@
-global.console = {
+global.console = Object.assign({}, console, {
   warn: jest.fn(),
   log: jest.fn(),
-  error: jest.fn(),
-};
+  error: jest.fn()
+});
 
 const env = require('./index');
 
@@ -25,5 +25,15 @@ describe('env', () => {
     env.not.prod.log('hello');
     expect(console.log).toHaveBeenCalled();
     expect(console.log).toHaveBeenCalledWith('hello');
+  });
+
+  test('should give true for prod', function () {
+    process.env.NODE_ENV = 'production';
+    expect(env.is.prod).toBeTruthy();
+  });
+
+  test('should give false for prod', function () {
+    process.env.NODE_ENV = 'not-production';
+    expect(env.is.prod).toBeFalsy();
   });
 })
